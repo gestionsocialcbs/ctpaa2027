@@ -5,8 +5,9 @@
   const TOTAL = 98;
   const RATIO = 1615 / 2090;               // ancho / alto de página
   const pad3 = n => String(n).padStart(3, '0');
-  const src = n => `pages/p${pad3(n)}.webp`;
-  const thumb = n => `thumbs/t${pad3(n)}.webp`;
+  const V = '3';  // incrementar al reemplazar las páginas (evita caché del navegador)
+  const src = n => `pages/p${pad3(n)}.webp?v=${V}`;
+  const thumb = n => `thumbs/t${pad3(n)}.webp?v=${V}`;
 
   /* ── Estructura del documento (páginas reales del PDF) ── */
   const C = { ps: 'var(--guinda)', dc: 'var(--oro)', cfd: 'var(--verde)', cat: 'var(--seg-cat)' };
@@ -732,7 +733,7 @@
     else document.documentElement.requestFullscreen?.();
   });
   document.addEventListener('fullscreenchange', () => setTimeout(onResize, 120));
-  $('btnDownload').addEventListener('click', () => toast('Descargando el PDF (39 MB)…'));
+  $('btnDownload').addEventListener('click', () => toast('Descargando el PDF (36 MB)…'));
 
   /* ── Redimensionar ── */
   let rzTimer, lastW = innerWidth;
