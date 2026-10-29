@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es-MX">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>CTPAA 2027 · Criterios Técnicos para la Programación Anual de Actividades</title>
+<meta name="description" content="Criterios Técnicos para la Programación Anual de Actividades y Servicios de Prestaciones Sociales Institucionales 2027. Unidad de Prestaciones Sociales · Coordinación de Bienestar Social · IMSS.">
+<meta name="theme-color" content="#002F2A">
+<meta property="og:type" content="book">
+<meta property="og:title" content="CTPAA 2027 · Criterios Técnicos para la Programación Anual de Actividades">
+<meta property="og:description" content="Estrategias, fundamentos, premisas y criterios para la planeación, elaboración y autorización del Programa Anual de Actividades (PAA).">
+<meta property="og:image" content="thumbs/t001.webp">
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="preload" as="image" href="pages/p001.webp">
+<link rel="stylesheet" href="assets/app.css">
+</head>
+<body>
+<a class="skip" href="#stage">Ir al documento</a>
+
+<header class="topbar">
+  <button class="icon-btn" id="btnPanel" aria-label="Mostrar u ocultar el índice" aria-controls="panel" aria-expanded="true">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+  </button>
+  <div class="brand">
+    <span class="brand-key">CTPAA 2027</span>
+    <span class="brand-title">Criterios Técnicos para la Programación Anual de Actividades</span>
+    <span class="brand-section" id="sectionName" aria-live="polite"></span>
+  </div>
+
+  <div class="tools" role="toolbar" aria-label="Herramientas de lectura">
+    <div class="seg" role="radiogroup" aria-label="Modo de lectura">
+      <button role="radio" data-mode="scroll" aria-checked="false" title="Lectura continua">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="2.5" width="12" height="8" rx="1"/><rect x="6" y="13.5" width="12" height="8" rx="1"/></svg>
+        <span>Continua</span>
+      </button>
+      <button role="radio" data-mode="single" aria-checked="false" title="Una página">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="6" y="3" width="12" height="18" rx="1"/></svg>
+        <span>Página</span>
+      </button>
+      <button role="radio" data-mode="spread" aria-checked="false" title="Doble página">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><rect x="2.5" y="4" width="9" height="16" rx="1"/><rect x="12.5" y="4" width="9" height="16" rx="1"/></svg>
+        <span>Libro</span>
+      </button>
+    </div>
+    <div class="zoom" aria-label="Zoom">
+      <button class="icon-btn" id="zoomOut" aria-label="Reducir zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12"/></svg></button>
+      <button class="zoom-val" id="zoomVal" aria-label="Restablecer zoom">100%</button>
+      <button class="icon-btn" id="zoomIn" aria-label="Aumentar zoom"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 12h12M12 6v12"/></svg></button>
+    </div>
+    <button class="icon-btn hide-sm" id="btnShare" aria-label="Copiar enlace a esta página" title="Copiar enlace a esta página">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M10 14a4 4 0 0 0 5.7 0l3-3a4 4 0 0 0-5.7-5.7l-1 1"/><path d="M14 10a4 4 0 0 0-5.7 0l-3 3a4 4 0 0 0 5.7 5.7l1-1"/></svg>
+    </button>
+    <button class="icon-btn hide-sm" id="btnFull" aria-label="Pantalla completa" title="Pantalla completa">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 9V4h5M20 9V4h-5M4 15v5h5M20 15v5h-5"/></svg>
+    </button>
+  </div>
+
+  <a class="download" href="pdf/CTPAA_2027.pdf" download="CTPAA_2027.pdf" id="btnDownload">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M5 20h14"/></svg>
+    <span class="dl-label">Descargar PDF</span>
+    <span class="dl-meta">39 MB</span>
+  </a>
+</header>
+
+<div class="layout">
+  <aside class="panel" id="panel" aria-label="Navegación del documento">
+    <div class="tabs" role="tablist">
+      <button role="tab" id="tab-toc" aria-controls="pane-toc" aria-selected="true">Contenido</button>
+      <button role="tab" id="tab-thumbs" aria-controls="pane-thumbs" aria-selected="false">Páginas</button>
+      <button role="tab" id="tab-search" aria-controls="pane-search" aria-selected="false">Buscar</button>
+    </div>
+
+    <div class="pane" id="pane-toc" role="tabpanel" aria-labelledby="tab-toc">
+      <nav><ol class="toc" id="toc"></ol></nav>
+    </div>
+
+    <div class="pane" id="pane-thumbs" role="tabpanel" aria-labelledby="tab-thumbs" hidden>
+      <ol class="thumbs" id="thumbs"></ol>
+    </div>
+
+    <div class="pane" id="pane-search" role="tabpanel" aria-labelledby="tab-search" hidden>
+      <form class="search" id="searchForm" role="search">
+        <label for="q" class="sr-only">Buscar en el documento</label>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+        <input id="q" type="search" placeholder="Clave, actividad o término" autocomplete="off" spellcheck="false">
+      </form>
+      <p class="search-hint" id="searchStatus" aria-live="polite">Busca por clave (p. ej. 23401), nombre de actividad o concepto.</p>
+      <ol class="results" id="results"></ol>
+    </div>
+  </aside>
+  <div class="scrim" id="scrim" hidden></div>
+
+  <div class="stage-wrap">
+    <main class="stage" id="stage" tabindex="-1" aria-label="Documento">
+      <div class="book" id="book"></div>
+    </main>
+    <button class="edge l" id="edgePrev" aria-label="Página anterior" tabindex="-1"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg></span></button>
+    <button class="edge r" id="edgeNext" aria-label="Página siguiente" tabindex="-1"><span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg></span></button>
+  </div>
+</div>
+
+<footer class="pager">
+  <button class="nav-btn" id="prev" aria-label="Página anterior">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M15 5l-7 7 7 7"/></svg>
+  </button>
+  <div class="scrub">
+    <div class="track" id="track" aria-hidden="true"></div>
+    <input type="range" id="range" min="1" max="98" value="1" aria-label="Ir a la página">
+    <output class="bubble" id="bubble" hidden></output>
+  </div>
+  <form class="goto" id="gotoForm">
+    <label for="pageInput" class="sr-only">Número de página</label>
+    <input id="pageInput" inputmode="numeric" value="1" aria-describedby="pageTotal">
+    <span id="pageTotal">de 98</span>
+  </form>
+  <button class="nav-btn" id="next" aria-label="Página siguiente">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M9 5l7 7-7 7"/></svg>
+  </button>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<noscript>
+  <div class="noscript">
+    Este lector requiere JavaScript. Puedes <a href="pdf/CTPAA_2027.pdf">descargar el PDF</a> directamente.
+  </div>
+</noscript>
+
+<script src="assets/text.js" defer></script>
+<script src="assets/app.js" defer></script>
+</body>
+</html>
