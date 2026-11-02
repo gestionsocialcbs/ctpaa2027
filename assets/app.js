@@ -5,7 +5,7 @@
   const TOTAL = 98;
   const RATIO = 1615 / 2090;               // ancho / alto de página
   const pad3 = n => String(n).padStart(3, '0');
-  const V = '4';  // incrementar al reemplazar las páginas (evita caché del navegador)
+  const V = '5';  // incrementar al reemplazar las páginas (evita caché del navegador)
   const src = n => `pages/p${pad3(n)}.webp?v=${V}`;
   const thumb = n => `thumbs/t${pad3(n)}.webp?v=${V}`;
 
@@ -733,7 +733,7 @@
     else document.documentElement.requestFullscreen?.();
   });
   document.addEventListener('fullscreenchange', () => setTimeout(onResize, 120));
-  $('btnDownload').addEventListener('click', () => toast('Descargando el PDF (37 MB)…'));
+  $('btnDownload').addEventListener('click', () => toast('Descargando el PDF (34 MB)…'));
 
   /* ── Redimensionar ── */
   let rzTimer, lastW = innerWidth;
