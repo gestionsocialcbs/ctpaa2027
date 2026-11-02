@@ -11,7 +11,7 @@ Versión ebook (HTML5) de los **Criterios Técnicos para la Programación Anual 
 - Enlaces directos a cualquier página: `…/index.html#p=44`.
 - Recuerda la última página leída y el modo elegido.
 - Teclado: ← → (cambiar página), Inicio/Fin, `/` (buscar), Ctrl + / Ctrl − (zoom). Gestos de deslizar en móvil.
-- Botón **Descargar PDF** (documento original, 36 MB).
+- Botón **Descargar PDF** (documento original, 37 MB).
 - Modo oscuro automático, diseño responsivo, texto accesible para lectores de pantalla.
 
 ## Estructura
@@ -40,7 +40,7 @@ pdf/CTPAA_2027.pdf    Documento original para descarga
 2. En el repositorio: **Settings → Pages → Build and deployment → Source: Deploy from a branch**, rama `main`, carpeta `/ (root)` → *Save*.
 3. En uno o dos minutos el ebook estará en `https://USUARIO.github.io/ctpaa-2027/`.
 
-> El PDF pesa 36 MB, dentro del límite de 100 MB por archivo de GitHub.
+> El PDF pesa 37 MB, dentro del límite de 100 MB por archivo de GitHub.
 
 ## Actualizar el documento
 Si cambia el PDF, regenera páginas y texto:
